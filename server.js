@@ -13,7 +13,7 @@ const app = express();
 const port = 3000;
 
 app.use(connectLivereload());
-
+app.use(express.static("public"));
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
