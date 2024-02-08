@@ -1,3 +1,50 @@
+:root {
+  --green-50: #bbcbaf;
+  --slate-800: #172027;
+  --blue-50: #86c6f2;
+}
+
 html {
   font-family: "Noto Serif", serif;
+}
+
+body {
+  background-color: var(--slate-800);
+  color: var(--green-50);
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.container {
+  max-width: min(80%, 800px);
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  align-items: baseline;
+  padding: 1rem 0;
+  border-bottom: 0.5px solid var(--green-50);
+}
+.nav__brand {
+  font-size: 1.12rem;
+  flex-shrink: 0;
+  margin-inline-end: 1rem;
+}
+.nav__links {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: baseline;
+  list-style: none;
+  font-size: 0.9rem;
+  text-decoration: underline;
+}
+.nav__links__link a {
+  color: var(--blue-50);
+  text-decoration: none;
+  padding: 1rem;
+  transition: color 0.3s ease;
 }
