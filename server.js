@@ -1,6 +1,18 @@
 const express = require("express");
+const livereload = require("livereload");
+const connectLivereload = require("connect-livereload");
+
+const liveReloadServer = livereload.createServer();
+liveReloadServer.server.once("connection", () => {
+  setTimeout(() => {
+    liveReloadServer.refresh("/");
+  }, 10);
+});
+
 const app = express();
 const port = 3000;
+
+app.use(connectLivereload());
 
 app.set("view engine", "ejs");
 
