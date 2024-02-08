@@ -20,8 +20,28 @@ app.use(expressEjsLayouts);
 app.set("view engine", "ejs");
 app.set("layout", "layout/default");
 
-app.get("/", (req, res) => {
-  res.render("pages/index", { title: "Essentials" });
+const pages = [
+  {
+    route: "/",
+    title: "Essentials",
+    page: "essentials",
+  },
+  {
+    route: "/layout",
+    title: "Layout",
+    page: "layout",
+  },
+  {
+    route: "/typography",
+    title: "Typography",
+    page: "typography",
+  },
+];
+
+pages.forEach((page) => {
+  app.get(page.route, (_, res) => {
+    res.render(`pages/${page.page}`, { title: page.title });
+  });
 });
 
 app.listen(port, () => {
