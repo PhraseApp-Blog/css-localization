@@ -2,6 +2,7 @@
   --green-50: #cbdcbd;
   --green-100: #bbcbaf;
   --slate-800: #172027;
+  --slate-900: #0e1317;
   --blue-50: #86c6f2;
   --font-system: system-ui, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
@@ -16,13 +17,19 @@ body {
   color: var(--green-100);
 }
 
+h1,
+h2,
+h3 {
+  color: var(--green-50);
+}
 h1 {
   font-size: 1.5rem;
-  color: var(--green-50);
 }
 h2 {
   font-size: 1.25rem;
-  color: var(--green-50);
+}
+h3 {
+  font-size: 1.12rem;
 }
 
 a {
@@ -58,6 +65,14 @@ blockquote {
   margin: 0 auto;
 }
 
+.relative {
+  position: relative;
+}
+
+.mt-1 {
+  margin-top: 0.5rem;
+}
+
 .nav {
   display: flex;
   align-items: baseline;
@@ -80,4 +95,17 @@ blockquote {
 }
 .nav__links__link a {
   padding: 1rem;
+}
+
+.demo-container {
+  background-color: var(--slate-900);
+  padding: 1rem;
+  border: 1px solid var(--blue-50);
+  border-radius: 0.25rem;
+}
+.demo-box {
+  padding: 0.5rem;
+  background-color: var(--slate-800);
+  border: 1px solid var(--green-50);
+  border-radius: 0.25rem;
 }

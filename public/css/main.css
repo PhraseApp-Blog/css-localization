@@ -30,6 +30,27 @@ p:lang(ar) {
   gap: 1rem;
   margin-block: 2rem;
 }
-button:lang(en, ja, ar) {
+button:lang(en) {
   font-family: var(--font-system);
+}
+
+.demo-box:lang(en) {
+  font-family: var(--font-system);
+}
+.positioning-demo {
+  height: 150px;
+}
+.absolute-physical-demo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 200px;
+  height: 100px;
+}
+.absolute-logical-demo {
+  position: absolute;
+  inset-inline-start: 20px;
+  inset-block-start: 20px;
+  width: 200px;
+  height: 100px;
 }
