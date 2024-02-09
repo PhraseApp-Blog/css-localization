@@ -2,10 +2,10 @@
   --green-50: #bbcbaf;
   --slate-800: #172027;
   --blue-50: #86c6f2;
-}
-
-html {
-  font-family: "Noto Serif", serif;
+  --monospace: ui-monospace, Menlo, Monaco, "Cascadia Mono",
+    "Segoe UI Mono", "Roboto Mono", "Oxygen Mono",
+    "Ubuntu Monospace", "Source Code Pro", "Fira Mono",
+    "Droid Sans Mono", "Courier New", monospace;
 }
 
 body {
@@ -15,6 +15,14 @@ body {
 
 h1 {
   font-size: 1.5rem;
+}
+h2 {
+  font-size: 1.25rem;
+}
+
+code {
+  background-color: var(--slate-800);
+  color: var(--blue-50);
 }
 
 .container {

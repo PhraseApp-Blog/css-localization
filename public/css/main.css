@@ -1,0 +1,25 @@
+:lang(en) {
+  font-family: "Noto Serif", serif;
+}
+code:lang(en) {
+  font-family: var(--monospace);
+}
+p:lang(en) {
+  line-height: 1.5;
+}
+
+:lang(jp) {
+  font-family: "Noto Serif JP", sans-serif;
+}
+p:lang(jp) {
+  font-size: 1.125rem;
+  line-height: 1.75;
+}
+
+:lang(ar) {
+  font-family: "Noto Naskh Arabic", "Noto Serif", serif;
+}
+p:lang(ar) {
+  font-size: 1.125rem;
+  line-height: 1.75;
+}
