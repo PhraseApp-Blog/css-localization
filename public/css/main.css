@@ -2,7 +2,7 @@
   font-family: "Noto Serif", serif;
 }
 code:lang(en) {
-  font-family: var(--monospace);
+  font-family: var(--font-monospace);
 }
 p:lang(en) {
   line-height: 1.5;
@@ -22,4 +22,14 @@ p:lang(jp) {
 p:lang(ar) {
   font-size: 1.125rem;
   line-height: 1.75;
+}
+
+.btns-dir {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-block: 2rem;
+}
+button:lang(en, ja, ar) {
+  font-family: var(--font-system);
 }

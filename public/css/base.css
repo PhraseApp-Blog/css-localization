@@ -3,10 +3,12 @@
   --green-100: #bbcbaf;
   --slate-800: #172027;
   --blue-50: #86c6f2;
-  --monospace: ui-monospace, Menlo, Monaco, "Cascadia Mono",
-    "Segoe UI Mono", "Roboto Mono", "Oxygen Mono",
-    "Ubuntu Monospace", "Source Code Pro", "Fira Mono",
-    "Droid Sans Mono", "Courier New", monospace;
+  --font-system: system-ui, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-monospace: ui-monospace, Menlo, Monaco,
+    "Cascadia Mono", "Segoe UI Mono", "Roboto Mono",
+    "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 }
 
 body {
@@ -35,8 +37,18 @@ code {
   color: var(--blue-50);
 }
 
+button {
+  background-color: var(--blue-50);
+  color: var(--slate-800);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.12rem;
+  cursor: pointer;
+  font-family: var(--font-system);
+}
+
 blockquote {
-  border-left: 0.12rem solid var(--blue-50);
+  border-inline-start: 0.12rem solid var(--blue-50);
   padding-inline-start: 1rem;
   font-size: 0.875rem;
 }
