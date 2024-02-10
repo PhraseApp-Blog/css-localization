@@ -13,7 +13,10 @@
   <div class="vertical-lr-demo demo-box">This block has a <code>writing-mode: vertical-rl</code> set. It flows top to bottom, then left to right.</div>
 </div>
 
-<p>Vertical layouts are sometimes traditionally used for East Asian languages.</p>
+<p>The container direction will affect vertical text. See for yourself:</p>
+<%- include('../partials/direction_buttons') %>
+
+<p>Vertical layouts are sometimes traditionally used for East Asian languages. The first block is left to right, the second right to left.</p>
 
 <div class="demo-container vertical-demo mbe-2" lang="jp">
   <div class="vertical-lr-demo demo-box">ワールド・ワイド・ウェッブを世界中に広げましょう。</div>
@@ -34,10 +37,9 @@
 <div class="relative demo-container positioning-demo mbs-1">
   <div class="absolute-logical-demo demo-box">This block is placed with logical absolute values; <code>inset-inline-start</code>, etc.</div>
 </div>
+
 <p>Change the document direction using the buttons below to see the difference between physical and logical absolute positioning.</p>
-<div class="btns-dir" dir="ltr">
-  <button id="btn-ltr">Left-to-right</button>
-  <button id="btn-rtl">Right-to-left</button>
-</div>
+<%- include('../partials/direction_buttons') %>
+
 <h3>Margin and padding</h3>
 

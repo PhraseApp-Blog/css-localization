@@ -57,8 +57,7 @@ button:lang(en) {
 
 .vertical-demo {
   display: flex;
-  justify-content: space-between;
-  gap: 1rem;
+  gap: 2rem;
 }
 .vertical-rl-demo {
   writing-mode: vertical-rl;
