@@ -24,7 +24,7 @@ p:lang(ar) {
   line-height: 1.75;
 }
 
-.btns-dir {
+.btn-group {
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -37,6 +37,7 @@ button:lang(en) {
 .demo-box:lang(en) {
   font-family: var(--font-system);
 }
+
 .positioning-demo {
   height: 150px;
 }
@@ -66,4 +67,17 @@ button:lang(en) {
 .vertical-lr-demo {
   writing-mode: vertical-lr;
   max-inline-size: 250px;
+}
+
+.sizing-demo {
+  display: flex;
+  gap: 2rem;
+}
+.sizing-physical-demo {
+  width: 200px;
+  height: 75px;
+}
+.logical-physical-demo {
+  inline-size: 200px;
+  block-size: 75px;
 }

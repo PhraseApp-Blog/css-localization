@@ -4,42 +4,90 @@
   right-to-left and vertical layouts.
 </p>
 
-<h2>Vertical text</h2>
-<p>Use the <code>vertical-rl</code> and <code>vertical-lr</code> classes to
-  set the writing mode of an element to vertical.</p>
+<h2>Writing mode (vertical text)</h2>
+<p>
+  Use the <code>vertical-rl</code> and
+  <code>vertical-lr</code> values of the
+  <code>writing-mode</code> property of an element to make
+  its text vertical.
+</p>
 
 <div class="demo-container vertical-demo mbe-2">
-  <div class="vertical-rl-demo demo-box">This block has a <code>writing-mode: vertical-lr</code> set. It flows top to bottom, then right to left.</div>
-  <div class="vertical-lr-demo demo-box">This block has a <code>writing-mode: vertical-rl</code> set. It flows top to bottom, then left to right.</div>
+  <div class="vertical-rl-demo demo-box">
+    This block has a
+    <code>writing-mode: vertical-lr</code> set. It flows top
+    to bottom, then right to left.
+  </div>
+  <div class="vertical-lr-demo demo-box">
+    This block has a
+    <code>writing-mode: vertical-rl</code> set. It flows top
+    to bottom, then left to right.
+  </div>
 </div>
 
-<p>The container direction will affect vertical text. See for yourself:</p>
+<p>
+  The container direction will affect vertical text. See for
+  yourself:
+</p>
 <%- include('../partials/direction_buttons') %>
 
-<p>Vertical layouts are sometimes traditionally used for East Asian languages. The first block is left to right, the second right to left.</p>
+<p>
+  Vertical layouts are traditionally used for East Asian
+  languages. The first block is left to right, the second
+  right to left.
+</p>
 
 <div class="demo-container vertical-demo mbe-2" lang="jp">
-  <div class="vertical-lr-demo demo-box">ワールド・ワイド・ウェッブを世界中に広げましょう。</div>
-  <div class="vertical-rl-demo demo-box">ワールド・ワイド・ウェッブを世界中に広げましょう。</div>
+  <div class="vertical-lr-demo demo-box">
+    ワールド・ワイド・ウェッブを世界中に広げましょう。
+  </div>
+  <div class="vertical-rl-demo demo-box">
+    ワールド・ワイド・ウェッブを世界中に広げましょう。
+  </div>
 </div>
 
 <h2>Logical properties</h2>
-<p>When working with rtl layouts, prefer logical properties to their
-  physical counterparts. For example, use <code>margin-inline-start</code>
-  instead of <code>margin-left</code>. This will ensure that your
-  styles are applied correctly regardless of the text direction.</p>
+<p>
+  When working with vertical and/or rtl layouts, prefer
+  logical properties to their physical counterparts.
 </p>
+
+<h3>Sizing</h3>
+<div class="demo-container sizing-demo" id="sizing-demo">
+  <div class="sizing-physical-demo demo-box">
+    This block is sized with physical values:
+    <code>height</code>, <code>width</code>, etc.
+  </div>
+  <div class="logical-physical-demo demo-box">
+    This block is sized with physical values:
+    <code>block-size</code>, <code>inline-size</code>.
+  </div>
+</div>
+
+<p>Logical sizing adapts to the block's writing mode</p>
+
+<%- include('../partials/writing_mode_buttons', { target:
+'#sizing-demo .demo-box' }) %>
 
 <h3>Positioning</h3>
 <div class="relative demo-container positioning-demo">
-  <div class="absolute-physical-demo demo-box">This block is placed with physical absolute values; <code>top</code>, <code>left</code>, etc.</div>
+  <div class="absolute-physical-demo demo-box">
+    This block is placed with physical absolute values;
+    <code>top</code>, <code>left</code>, etc.
+  </div>
 </div>
 <div class="relative demo-container positioning-demo mbs-1">
-  <div class="absolute-logical-demo demo-box">This block is placed with logical absolute values; <code>inset-inline-start</code>, etc.</div>
+  <div class="absolute-logical-demo demo-box">
+    This block is placed with logical absolute values;
+    <code>inset-inline-start</code>, etc.
+  </div>
 </div>
 
-<p>Change the document direction using the buttons below to see the difference between physical and logical absolute positioning.</p>
+<p>
+  Change the document direction using the buttons below to
+  see the difference between physical and logical absolute
+  positioning.
+</p>
 <%- include('../partials/direction_buttons') %>
 
 <h3>Margin and padding</h3>
-
