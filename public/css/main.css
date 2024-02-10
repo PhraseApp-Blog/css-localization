@@ -54,3 +54,17 @@ button:lang(en) {
   width: 200px;
   height: 100px;
 }
+
+.vertical-demo {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.vertical-rl-demo {
+  writing-mode: vertical-rl;
+  max-inline-size: 250px;
+}
+.vertical-lr-demo {
+  writing-mode: vertical-lr;
+  max-inline-size: 250px;
+}
