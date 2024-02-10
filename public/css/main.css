@@ -103,3 +103,43 @@ p:lang(ar) {
 #border-radius-demo .border-radius-logical-demo {
   border-start-start-radius: 20px;
 }
+
+.font-system,
+.font-system * {
+  font-family: var(--font-system);
+}
+:lang(hi) {
+  font-family: "Noto Serif Devanagari", serif;
+}
+:lang(zh) {
+  font-family: "Noto Serif SC", serif;
+}
+:lang(ko) {
+  font-family: "Noto Serif KR", serif;
+}
+.font-no-fallback {
+  font-family: Impact;
+}
+.font-fallback {
+  font-family: "Noto Naskh Arabic", "Noto Serif Devanagari",
+    "Noto Serif SC", "Noto Serif KR", "Noto Serif JP",
+    "Noto Serif", serif;
+}
+.font-tahoma {
+  font-family: Tahoma;
+}
+.font-verdana {
+  font-family: Verdana;
+}
+.font-impact {
+  font-family: Impact;
+}
+
+.font-inconsistency-demo {
+  text-align: center;
+  border-block: 0.5px dashed var(--blue-50);
+}
+
+ruby {
+  ruby-position: under;
+}

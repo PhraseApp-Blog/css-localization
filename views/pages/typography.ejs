@@ -1,0 +1,151 @@
+<h1>Typography</h1>
+<p>
+  Localized typography involved working with fonts and
+  handling the idiosyncracies of scripts.
+</p>
+
+<h2>Fonts</h2>
+<p>
+  We can use system fonts, universal font collections, or
+  mixed per-language fonts.
+</p>
+
+<h3>System fonts</h3>
+<p>
+  System fonts often cover a wide variety of languages. Here
+  are some examples in your current system font:
+</p>
+<dl class="font-system">
+  <dt>Latin</dt>
+  <dd>
+    Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss
+    Tt Uu Vv Ww Xx Yy Zz
+  </dd>
+  <dt>Cyrillic</dt>
+  <dd>
+    Аа Бб Вв Гг Дд Ее Ёё Жж Зз Ии Йй Кк Лл Мм Нн Оо Пп Рр Сс
+    Тт Уу Фф Хх Цц Чч Шш Щщ Ъъ Ыы Ьь Ээ Юю Яя
+  </dd>
+  <dt>Arabic</dt>
+  <dd class="text-lg">
+    ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي
+  </dd>
+  <dt>Hindi</dt>
+  <dd class="text-lg">
+    अ आ इ ई उ ऊ ऋ ए ऐ ओ औ अं अः क ख ग घ ङ च छ ज झ ञ ट ठ ड ढ
+    ण त थ द ध न प फ ब भ म य र ल व श ष स ह
+  </dd>
+  <dt>Chinese</dt>
+  <dd class="text-lg">你好吗</dd>
+  <dt>Japanese</dt>
+  <dd class="text-lg">こんにちは</dd>
+  <dt>Korean</dt>
+  <dd class="text-lg">안녕하세요</dd>
+</dl>
+
+<h3 class="mbs-4">Universal font collections</h3>
+<p>
+  Universal font collections, like Google's Noto, are
+  designed to be uniform in look while collectively covering
+  a variety of scripts. Here are examples in various Noto
+  fonts.
+</p>
+<dl>
+  <dt>Latin (Noto Serif)</dt>
+  <dd>
+    Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss
+    Tt Uu Vv Ww Xx Yy Zz
+  </dd>
+  <dt>Cyrillic (Noto Serif)</dt>
+  <dd>
+    Аа Бб Вв Гг Дд Ее Ёё Жж Зз Ии Йй Кк Лл Мм Нн Оо Пп Рр Сс
+    Тт Уу Фф Хх Цц Чч Шш Щщ Ъъ Ыы Ьь Ээ Юю Яя
+  </dd>
+  <dt>Arabic (Noto Naskh Arabic)</dt>
+  <dd lang="ar" class="text-lg">
+    ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي
+  </dd>
+  <dt>Hindi (Noto Serif Devanagari)</dt>
+  <dd lang="hi" class="text-lg">
+    अ आ इ ई उ ऊ ऋ ए ऐ ओ औ अं अः क ख ग घ ङ च छ ज झ ञ ट ठ ड ढ
+    ण त थ द ध न प फ ब भ म य र ल व श ष स ह
+  </dd>
+  <dt>Chinese (Noto Serif SC)</dt>
+  <dd lang="zh" class="text-lg">你好吗</dd>
+  <dt>Japanese (Noto Serif JP)</dt>
+  <dd lang="jp" class="text-lg">こんにちは</dd>
+  <dt>Korean (Noto Serif KR)</dt>
+  <dd lang="ko" class="text-lg">안녕하세요</dd>
+</dl>
+
+<h3 class="mbs-4">Fallback</h3>
+<p>
+  If a font doesn't support a particular script, the browser
+  will fall back to a font that does. We can get ahead of
+  this by specifying a fallback font in our CSS. The
+  following uses the Impact font with no fallback. Note how
+  non-Latin glyphs fall back to the system font.
+</p>
+<p class="font-no-fallback demo-container">
+  Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss
+  Tt Uu Vv Ww Xx Yy Zz <br />
+  Аа Бб Вв Гг Дд Ее Ёё Жж Зз Ии Йй Кк Лл Мм Нн Оо Пп Рр Сс
+  Тт Уу Фф Хх Цц Чч Шш Щщ Ъъ Ыы Ьь Ээ Юю Яя <br />
+  ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي
+  <br />
+  अ आ इ ई उ ऊ ऋ ए ऐ ओ औ अं अः क ख ग घ ङ च छ ज झ ञ ट ठ ड ढ ण
+  त थ द ध न प फ ब भ म य र ल व श ष स ह <br />
+  你好吗 <br />
+  こんにちは <br />
+  안녕하세요
+</p>
+
+<p>
+  The following is using a Noto stack with fallback. Note
+  how all glyphs look the same as the Noto list above.
+</p>
+<p class="font-fallback demo-container">
+  Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss
+  Tt Uu Vv Ww Xx Yy Zz <br />
+  Аа Бб Вв Гг Дд Ее Ёё Жж Зз Ии Йй Кк Лл Мм Нн Оо Пп Рр Сс
+  Тт Уу Фф Хх Цц Чч Шш Щщ Ъъ Ыы Ьь Ээ Юю Яя <br />
+  ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي
+  <br />
+  अ आ इ ई उ ऊ ऋ ए ऐ ओ औ अं अः क ख ग घ ङ च छ ज झ ञ ट ठ ड ढ ण
+  त थ द ध न प फ ब भ म य र ल व श ष स ह <br />
+  你好吗 <br />
+  こんにちは <br />
+  안녕하세요
+</p>
+
+<h3 class="mbs-4">Mixing font families</h3>
+<p>
+  We can mix different fonts for different scripts. Here's
+  Tahoma used for Arabic and Verdana used for English.
+</p>
+<div class="demo-container">
+  <p class="font-tahoma" dir="rtl">
+    نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف
+    بجلد أزرق
+  </p>
+  <p class="font-verdana">
+    The quick brown fox jumps over the lazy dog.
+  </p>
+</div>
+
+<p>
+  Mixing fonts can cause iconsistencies; look at the
+  variance in stroke weight and line height between Arabic
+  in the Tahomo font and English in Impact.
+</p>
+
+<div class="demo-container">
+  <p class="font-inconsistency-demo">
+    <span class="font-tahoma text-lg"
+      >نص حكيم له سر قاطع
+    </span>
+    <span class="font-impact">
+      The quick brown fox jumps
+    </span>
+  </p>
+</div>
