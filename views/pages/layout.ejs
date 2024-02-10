@@ -12,7 +12,9 @@
   its text vertical.
 </p>
 
-<div class="demo-container vertical-demo mbe-2">
+<div
+  class="vertical-demo demo-container demo-container--cols mbe-2"
+>
   <div class="vertical-rl-demo demo-box">
     This block has a
     <code>writing-mode: vertical-lr</code> set. It flows top
@@ -37,7 +39,10 @@
   right to left.
 </p>
 
-<div class="demo-container vertical-demo mbe-4" lang="jp">
+<div
+  lang="jp"
+  class="vertical-demo demo-container demo-container--cols mbe-4"
+>
   <div class="vertical-lr-demo demo-box">
     ワールド・ワイド・ウェッブを世界中に広げましょう。
   </div>
@@ -53,7 +58,10 @@
 </p>
 
 <h3>Sizing</h3>
-<div class="demo-container sizing-demo" id="sizing-demo">
+<div
+  id="sizing-demo"
+  class="sizing-demo demo-container demo-container--cols"
+>
   <div class="sizing-physical-demo demo-box">
     This block is sized with physical values:
     <code>height</code>, <code>width</code>, etc.
@@ -74,13 +82,14 @@
 '#sizing-demo .demo-box' }) %>
 
 <h3>Positioning</h3>
-<div class="relative demo-container positioning-demo">
+<div class="positioning-demo demo-container relative">
   <div class="absolute-physical-demo demo-box">
     This block is placed with physical absolute values;
     <code>top</code>, <code>left</code>, etc.
   </div>
 </div>
-<div class="relative demo-container positioning-demo mbs-1">
+
+<div class="positioning-demo demo-container relative mbs-1">
   <div class="absolute-logical-demo demo-box">
     This block is placed with logical absolute values;
     <code>inset-inline-start</code>, etc.
@@ -95,7 +104,10 @@
 <%- include('../partials/direction_buttons') %>
 
 <h3>Margin and padding</h3>
-<div class="demo-container spacing-demo" id="spacing-demo">
+<div
+  id="spacing-demo"
+  class="demo-container demo-container--cols"
+>
   <div class="spacing-physical-demo demo-box">
     This block is spaced with physical values:
     <code>margin-top</code>, <code>padding-left</code>.
@@ -121,7 +133,10 @@ include('../partials/direction_buttons') %>
   writing mode and direction.
 </p>
 
-<div class="demo-container border-demo" id="border-demo">
+<div
+  id="border-demo"
+  class="demo-container demo-container--cols"
+>
   <div class="border-physical-demo demo-box">
     This block has physical borders:
     <code>border-top</code>, <code>border-left</code>, etc.
@@ -143,8 +158,8 @@ include('../partials/direction_buttons') %>
 </p>
 
 <div
-  class="demo-container border-radius-demo"
   id="border-radius-demo"
+  class="demo-container demo-container--cols"
 >
   <div class="border-radius-physical-demo demo-box">
     This block has a physical border radius:

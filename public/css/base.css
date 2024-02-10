@@ -118,9 +118,23 @@ blockquote {
   border: 1px solid var(--blue-50);
   border-radius: 0.25rem;
 }
+.demo-container--cols {
+  display: flex;
+  gap: 2rem;
+}
 .demo-box {
   padding: 0.5rem;
   background-color: var(--slate-800);
   border: 1px solid var(--green-50);
   border-radius: 0.25rem;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-block: 2rem;
+}
+button:lang(en) {
+  font-family: var(--font-system);
 }

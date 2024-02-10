@@ -24,16 +24,6 @@ p:lang(ar) {
   line-height: 1.75;
 }
 
-.btn-group {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-block: 2rem;
-}
-button:lang(en) {
-  font-family: var(--font-system);
-}
-
 .demo-box:lang(en) {
   font-family: var(--font-system);
 }
@@ -56,10 +46,6 @@ button:lang(en) {
   height: 100px;
 }
 
-.vertical-demo {
-  display: flex;
-  gap: 2rem;
-}
 .vertical-rl-demo {
   writing-mode: vertical-rl;
   max-inline-size: 250px;
@@ -69,10 +55,6 @@ button:lang(en) {
   max-inline-size: 250px;
 }
 
-.sizing-demo {
-  display: flex;
-  gap: 2rem;
-}
 .sizing-physical-demo {
   width: 200px;
   height: 75px;
@@ -82,11 +64,7 @@ button:lang(en) {
   block-size: 75px;
 }
 
-.spacing-demo {
-  display: flex;
-  gap: 2rem;
-}
-.spacing-demo .demo-box {
+#spacing-demo .demo-box {
   block-size: 125px;
   inline-size: 200px;
 }
@@ -99,37 +77,29 @@ button:lang(en) {
   padding-inline-start: 40px;
 }
 
-.border-demo {
-  display: flex;
-  gap: 2rem;
-}
-.border-demo .demo-box {
+#border-demo .demo-box {
   border: none;
   block-size: 100px;
   inline-size: 200px;
 }
-.border-demo .border-physical-demo {
+#border-demo .border-physical-demo {
   border-top: 2px solid var(--blue-50);
   border-left: 2px solid var(--blue-50);
 }
-.border-demo .border-logical-demo {
+#border-demo .border-logical-demo {
   border-block-start: 2px solid var(--blue-50);
   border-inline-start: 2px solid var(--blue-50);
 }
 
-.border-radius-demo {
-  display: flex;
-  gap: 2rem;
-}
-.border-radius-demo .demo-box {
+#border-radius-demo .demo-box {
   border-radius: 0;
   border: 2px solid var(--blue-50);
   block-size: 100px;
   inline-size: 200px;
 }
-.border-radius-demo .border-radius-physical-demo {
+#border-radius-demo .border-radius-physical-demo {
   border-top-left-radius: 20px;
 }
-.border-radius-demo .border-radius-logical-demo {
+#border-radius-demo .border-radius-logical-demo {
   border-start-start-radius: 20px;
 }
