@@ -135,3 +135,27 @@ include('../partials/direction_buttons') %>
 <%- include('../partials/writing_mode_buttons', { target:
 '#border-demo .demo-box' }) %> <%-
 include('../partials/direction_buttons') %>
+
+<h3>Border radius</h3>
+<p>
+  Logical border radiuses also adapt to both writing mode
+  and direction.
+</p>
+
+<div
+  class="demo-container border-radius-demo"
+  id="border-radius-demo"
+>
+  <div class="border-radius-physical-demo demo-box">
+    This block has a physical border radius:
+    <code>border-radius-top-left</code>.
+  </div>
+  <div class="border-radius-logical-demo demo-box">
+    This block has a logical border radius:
+    <code>border-start-start-radius</code>.
+  </div>
+</div>
+
+<%- include('../partials/writing_mode_buttons', { target:
+'#border-radius-demo .demo-box' }) %> <%-
+include('../partials/direction_buttons') %>

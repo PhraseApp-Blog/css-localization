@@ -116,3 +116,20 @@ button:lang(en) {
   border-block-start: 2px solid var(--blue-50);
   border-inline-start: 2px solid var(--blue-50);
 }
+
+.border-radius-demo {
+  display: flex;
+  gap: 2rem;
+}
+.border-radius-demo .demo-box {
+  border-radius: 0;
+  border: 2px solid var(--blue-50);
+  block-size: 100px;
+  inline-size: 200px;
+}
+.border-radius-demo .border-radius-physical-demo {
+  border-top-left-radius: 20px;
+}
+.border-radius-demo .border-radius-logical-demo {
+  border-start-start-radius: 20px;
+}
