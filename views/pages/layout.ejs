@@ -114,3 +114,24 @@
 <%- include('../partials/writing_mode_buttons', { target:
 '#spacing-demo .demo-box' }) %> <%-
 include('../partials/direction_buttons') %>
+
+<h3>Borders</h3>
+<p>
+  Unlike physical borders, logical borders adapt to both
+  writing mode and direction.
+</p>
+
+<div class="demo-container border-demo" id="border-demo">
+  <div class="border-physical-demo demo-box">
+    This block has physical borders:
+    <code>border-top</code>, <code>border-left</code>, etc.
+  </div>
+  <div class="border-logical-demo demo-box">
+    This block has logical borders:
+    <code>border-block</code>, <code>border-inline</code>.
+  </div>
+</div>
+
+<%- include('../partials/writing_mode_buttons', { target:
+'#border-demo .demo-box' }) %> <%-
+include('../partials/direction_buttons') %>

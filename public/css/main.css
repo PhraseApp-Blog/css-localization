@@ -98,3 +98,21 @@ button:lang(en) {
   margin-block-start: 20px;
   padding-inline-start: 40px;
 }
+
+.border-demo {
+  display: flex;
+  gap: 2rem;
+}
+.border-demo .demo-box {
+  border: none;
+  block-size: 100px;
+  inline-size: 200px;
+}
+.border-demo .border-physical-demo {
+  border-top: 2px solid var(--blue-50);
+  border-left: 2px solid var(--blue-50);
+}
+.border-demo .border-logical-demo {
+  border-block-start: 2px solid var(--blue-50);
+  border-inline-start: 2px solid var(--blue-50);
+}
