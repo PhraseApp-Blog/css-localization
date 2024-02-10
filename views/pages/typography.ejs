@@ -192,3 +192,36 @@
 <%- include('../partials/writing_mode_buttons', { target:
 '#ruby-demo p' }) %> <%-
 include('../partials/direction_buttons') %>
+
+<h3>Text emphasis</h3>
+<p>
+  We can use the <code>text-emphasis</code> property to add
+  marks to text. This is often used in East Asian languages
+  instead of italics or bold.
+</p>
+
+<div
+  id="text-emphasis-demo"
+  class="demo-container demo-container--cols"
+>
+  <p lang="jp">
+    明日は<em class="text-emphasis-dot">晴れ</em>です。
+  </p>
+  <p lang="jp">
+    明日は<em
+      class="text-emphasis-sesame text-emphasis-under-left"
+      >晴れ</em
+    >です。
+  </p>
+</div>
+
+<p>
+  We use the <code>text-emphasis</code> and
+  <code>text-emphasis-position</code> properties to style
+  text emphasis. This is subject to
+  <code>writing-mode</code>. Play with it and see:
+</p>
+
+<%- include('../partials/writing_mode_buttons', { target:
+'#text-emphasis-demo p' }) %> <%-
+include('../partials/direction_buttons') %>

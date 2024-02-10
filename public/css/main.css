@@ -155,3 +155,21 @@ p:lang(ar) {
 .ruby-under {
   ruby-position: under;
 }
+
+#text-emphasis-demo {
+  justify-content: center;
+}
+em:lang(jp) {
+  font-style: normal;
+  text-emphasis-color: var(--blue-50);
+  text-emphasis-position: over right;
+}
+.text-emphasis-dot:lang(jp) {
+  text-emphasis-style: dot;
+}
+.text-emphasis-sesame:lang(jp) {
+  text-emphasis-style: sesame;
+}
+.text-emphasis-under-left:lang(jp) {
+  text-emphasis-position: under left;
+}
