@@ -37,7 +37,7 @@
   right to left.
 </p>
 
-<div class="demo-container vertical-demo mbe-2" lang="jp">
+<div class="demo-container vertical-demo mbe-4" lang="jp">
   <div class="vertical-lr-demo demo-box">
     ワールド・ワイド・ウェッブを世界中に広げましょう。
   </div>
@@ -58,13 +58,17 @@
     This block is sized with physical values:
     <code>height</code>, <code>width</code>, etc.
   </div>
-  <div class="logical-physical-demo demo-box">
-    This block is sized with physical values:
+  <div class="sizing-logical-demo demo-box">
+    This block is sized with logical values:
     <code>block-size</code>, <code>inline-size</code>.
   </div>
 </div>
 
-<p>Logical sizing adapts to the block's writing mode</p>
+<p>
+  Logical sizing adapts to the block's writing mode. To see
+  this in action, change the writing mode of the above
+  blocks using these buttons:
+</p>
 
 <%- include('../partials/writing_mode_buttons', { target:
 '#sizing-demo .demo-box' }) %>
@@ -91,3 +95,22 @@
 <%- include('../partials/direction_buttons') %>
 
 <h3>Margin and padding</h3>
+<div class="demo-container spacing-demo" id="spacing-demo">
+  <div class="spacing-physical-demo demo-box">
+    This block is spaced with physical values:
+    <code>margin-top</code>, <code>padding-left</code>.
+  </div>
+  <div class="spacing-logical-demo demo-box">
+    This block is spaced with logical values:
+    <code>margin-block-start</code>,
+    <code>padding-inline-start</code>.
+  </div>
+</div>
+
+<p>
+  Logical margin and padding adapt to the block's writing
+  mode and direction. Try it out:
+</p>
+<%- include('../partials/writing_mode_buttons', { target:
+'#spacing-demo .demo-box' }) %> <%-
+include('../partials/direction_buttons') %>

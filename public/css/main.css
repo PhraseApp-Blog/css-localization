@@ -77,7 +77,24 @@ button:lang(en) {
   width: 200px;
   height: 75px;
 }
-.logical-physical-demo {
+.sizing-logical-demo {
   inline-size: 200px;
   block-size: 75px;
+}
+
+.spacing-demo {
+  display: flex;
+  gap: 2rem;
+}
+.spacing-demo .demo-box {
+  block-size: 125px;
+  inline-size: 200px;
+}
+.spacing-physical-demo {
+  margin-top: 20px;
+  padding-left: 40px;
+}
+.spacing-logical-demo {
+  margin-block-start: 20px;
+  padding-inline-start: 40px;
 }
