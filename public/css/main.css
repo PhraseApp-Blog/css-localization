@@ -15,6 +15,9 @@ p:lang(jp) {
   font-size: 1.125rem;
   line-height: 1.75;
 }
+.text-lg:lang(jp) {
+  font-size: 1.25rem;
+}
 
 :lang(ar) {
   font-family: "Noto Naskh Arabic", "Noto Serif", serif;
@@ -140,6 +143,15 @@ p:lang(ar) {
   border-block: 0.5px dashed var(--blue-50);
 }
 
-ruby {
+.ruby-demo {
+  justify-content: center;
+}
+.ruby-demo p {
+  margin-inline: 20px;
+}
+.ruby-over {
+  ruby-position: over;
+}
+.ruby-under {
   ruby-position: under;
 }

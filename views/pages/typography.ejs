@@ -136,7 +136,7 @@
 <p>
   Mixing fonts can cause iconsistencies; look at the
   variance in stroke weight and line height between Arabic
-  in the Tahomo font and English in Impact.
+  in the Tahoma font and English in Impact.
 </p>
 
 <div class="demo-container">
@@ -149,3 +149,46 @@
     </span>
   </p>
 </div>
+
+<h2>Pronounciation marks</h2>
+<p>
+  Some languages add pronounciation text or marks to their
+  scripts, like Ruby or diacritics.
+</p>
+
+<h3>Ruby</h3>
+<p>
+  Ruby annotations are small texts placed above or to the
+  right of the base text to give pronunciation guides,
+  explanations, or to show the use of characters in East
+  Asian languages.
+</p>
+
+<div
+  id="ruby-demo"
+  class="ruby-demo demo-container demo-container--cols"
+>
+  <p lang="jp" class="text-lg ruby-over">
+    <ruby>
+      東京 <rp>(</rp> <rt>とうきょう</rt><rp>)</rp>
+    </ruby>
+  </p>
+
+  <p lang="jp" class="text-lg ruby-under">
+    <ruby>
+      東京 <rp>(</rp> <rt>とうきょう</rt><rp>)</rp>
+    </ruby>
+  </p>
+</div>
+
+<p>
+  We can use the <code>ruby-position</code> property to
+  control whether the Ruby appears above (default) or below
+  the text. This is subject to the
+  <code>writing-mode</code> and <code>dir</code> of the
+  text. Try it out:
+</p>
+
+<%- include('../partials/writing_mode_buttons', { target:
+'#ruby-demo p' }) %> <%-
+include('../partials/direction_buttons') %>
