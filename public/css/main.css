@@ -18,6 +18,9 @@ p:lang(jp) {
 .text-lg:lang(jp) {
   font-size: 1.25rem;
 }
+.text-lg:lang(ar) {
+  font-size: 1.25rem;
+}
 
 :lang(ar) {
   font-family: "Noto Naskh Arabic", "Noto Serif", serif;
@@ -172,4 +175,8 @@ em:lang(jp) {
 }
 .text-emphasis-under-left:lang(jp) {
   text-emphasis-position: under left;
+}
+
+q:lang(ar) {
+  quotes: "«" "»" "‹" "›";
 }
