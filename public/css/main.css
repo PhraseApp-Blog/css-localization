@@ -52,6 +52,13 @@ p:lang(ar) {
   height: 100px;
 }
 
+.vertical-demo {
+  align-items: start;
+}
+.horizontal-tb-demo {
+  writing-mode: horizontal-tb;
+  max-block-size: 250px;
+}
 .vertical-rl-demo {
   writing-mode: vertical-rl;
   max-inline-size: 250px;
